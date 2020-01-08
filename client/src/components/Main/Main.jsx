@@ -6,7 +6,6 @@ import AuthService from '../AuthService.jsx';
 
 // components
 import Splash from '../Splash/Splash.jsx';
-import Dashboard from '../BusinessPortal/Dashboard/Dashboard.js';
 
 const theme = createMuiTheme({
   palette: {
