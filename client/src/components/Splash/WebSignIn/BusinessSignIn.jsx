@@ -1,12 +1,8 @@
 import React from 'react';
 
-
 // material-ui
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-
-// components
-import Dashboard from '../../BusinessPortal/Dashboard/Dashboard.js';
 
 // styling
 const useStyles = makeStyles(theme => ({
