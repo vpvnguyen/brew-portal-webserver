@@ -8,17 +8,6 @@ import AuthService from '../AuthService.jsx';
 import Splash from '../Splash/Splash.jsx';
 import Dashboard from '../BusinessPortal/Dashboard/Dashboard.js';
 
-// router 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link, 
-  withRouter, 
-  useParams
-} from "react-router-dom";
-import PrivateRoute from '../../PrivateRoute'; 
-
 const theme = createMuiTheme({
   palette: {
     type: 'light', // 'light', 'dark', manualColor
@@ -52,24 +41,7 @@ class Main extends Component {
     error: null,
     authenticated: false
   };
-//   componentWillMount() {
-//     if (!this.Auth.loggedIn()) {
-//         this.props.history.replace('/login')
-//     }
-//     else {
-//         try {
-//             const profile = this.Auth.getProfile()
-//             this.setState({
-//                 user: profile, 
-//                 authenticated: true
-//             })
-//         }
-//         catch(err){
-//             this.Auth.logout()
-//             this.props.history.replace('/login')
-//         }
-//     }
-// }
+
   // because we are using cookies on mount it will check for authenticated users 
   componentDidMount() {
     console.log(this.props.match)
