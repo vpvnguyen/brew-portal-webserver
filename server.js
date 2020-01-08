@@ -18,7 +18,6 @@ app.use(express.urlencoded({
   extended: true
 }));
 app.use(express.json());
-app.use(bodyParser.json())
 
 // initialize passport 
 app.use(passport.initialize());
