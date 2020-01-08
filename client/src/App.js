@@ -3,18 +3,15 @@ import React, { Component } from "react";
 // routing
 import {
   Route,
-  NavLink,
   BrowserRouter as Router,
   Switch
 } from "react-router-dom";
-import PrivateRoute from './PrivateRoute'; 
 
 // styling
 import "./App.css";
 
 // components
 import Main from "./components/Main/Main.jsx";
-import Splash from './components/Splash/Splash.jsx'; 
 import Dashboard from './components/BusinessPortal/Dashboard/Dashboard'; 
 import NotFound from './components/NotFound.jsx'; 
 
@@ -24,7 +21,6 @@ class App extends Component {
     data: null, 
     isAuthenticated: false, 
   };
-
 
   getUser = (user) => {
     console.log(user)
@@ -54,11 +50,11 @@ class App extends Component {
 
   componentDidMount() {
     console.log("app componentDidMount - connect backend");
-  }
+  };
 
   render() {
     return this.routing;
   }
-}
+};
 
 export default App;
