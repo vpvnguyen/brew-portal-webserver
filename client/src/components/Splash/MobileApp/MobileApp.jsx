@@ -1,9 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-
-const handleClicks = () => {
-    console.log('mobileapp');
-};
 
 export default function MobileApp() {
     return (
