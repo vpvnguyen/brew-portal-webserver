@@ -14,8 +14,7 @@ passport.use(
         clientID: keys.clientID,
         clientSecret: keys.clientSecret
     }, (accessToken, refreshToken, profile, done) => {
-        //strategy callback 
-        // console.log(profile)
+
         //lodash to pick data we need from profile object 
         let data = __.pick(profile, 'displayName', 'id', 'name', 'photos'); 
         //returning a promise 
